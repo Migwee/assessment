@@ -1,15 +1,15 @@
 import requests
 
 
-a = raw_input('Enter currency to convert from?')
+a = input('Enter currency to convert from?')
 a = a.upper()
 
 
-b = raw_input('Enter currency to convert from?')
+b = input('Enter currency to convert from?')
 b = b.upper()
 
 
-c = float(raw_input('Enter value to convert?'))
+c = float(input('Enter value to convert?'))
 
 url = ('http://rate-exchange.appspot.com/currency?from=%s&to=%s&q=1') % (a, b)
 print url
@@ -28,6 +28,6 @@ strip1 = (' %s</h2>') % b
 
 ralt = requests.get(urlalt)
 d = float(ralt.text.split(split1)[1].split(strip1)[0].strip())
-print d
+print (d)
 
-print c * d
+print (c * d)
