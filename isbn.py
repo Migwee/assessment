@@ -19,9 +19,9 @@ else:
     Digit8=int(ISBN[7])*4
     Digit9=int(ISBN[8])*3
     Digit10=int(ISBN[9])*2
-    Sum=(Digit1+Digit2+Digit3+Digit4+Digit5+Digit6+Digit7+Digit8+Digit9+Digit10)
-    Mod=Sum%11
-    Digit11=11-Mod
+    Result=(Digit1+Digit2+Digit3+Digit4+Digit5+Digit6+Digit7+Digit8+Digit9+Digit10)
+    Remainder=Result%11
+    Digit11=11-Remainder
     if Digit11==10:
        Digit11='X'
     ISBNNumber=str(ISBN)+str(Digit11)
