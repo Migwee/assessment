@@ -1,9 +1,10 @@
-ISBN=input('Please enter your 10 digit number: ')
+ISBN=''
 
-while len(ISBN)!= 10:
+while len(str(ISBN))!=10:
 
     print('Please make sure you have entered a number which is exactly 10 characters long.')
     ISBN=raw_input('Please enter the 10 digit number: ')
+    
 
 Digit1=int(ISBN[0])*11
 Digit2=int(ISBN[1])*10
