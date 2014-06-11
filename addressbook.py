@@ -32,11 +32,13 @@ elif answer == "2" :
     temp1 = open("addressbookdata","r")
     for line in temp1:
         if searchcriteria in line:
-            print line
+            print line 
+        else:
+            print ("No results found")
 
 
 # USER DID NOT PICK CREATE OR SEARCH 
 
-else :
+else:
     print ("Incorrect Answer")
     exit()
