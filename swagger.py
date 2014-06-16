@@ -50,15 +50,15 @@ rate(c_type1, c_type2)
 
 numb1 = float(raw_input("How much %s do you wish to convert? " %c_type1))
 
-def conversion(w, x, y):
-    if w == "GBP":
-        z = y * float(currencies[short_hand[x]])
-        return z
-    elif x == "GBP":
-        z = 
+def conversion(fromCurr, toCurr, value):
+    if fromCurr == "GBP":
+        answer = value * float(currencies[short_hand[toCurr]])
+        return answer
+    elif toCurr == "GBP":
+        answer = value / float(currencies[short_hand[fromCurr]])
     else:
-        z = y / float(currencies[short_hand[w]])
-        z = y * float(currencies[short_hand[z]]) 
-        return z
+        answer = value / float(currencies[short_hand[fromCurr]])
+        answer = value * float(currencies[short_hand[toCurr]]) 
+        return answer
 
 print "%2.f %s is %2.f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
