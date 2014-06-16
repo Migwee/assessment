@@ -1,8 +1,8 @@
 currencies= {
     "Pound Sterling": 1, 
-    "Euro": 1.2, 
-    "US Dollar": 1.6, 
-    "Japanese Yen": 200
+    "Euro": 1.26, 
+    "US Dollar": 1.7, 
+    "Japanese Yen": 173.01
     }
 
 short_hand = {
