@@ -32,12 +32,12 @@ ELSE:
 ###Python code for the first task (This worked, however not how I wanted it to.)
 ```python
 allowables = ["pounds", "dollars", "euro", "yen"]
-rates = [1,1.68,1.23,171.61]
+rates = [1,1.68,1.23,171.61] #this is where the user can change the conversion rates if they do change
 pounds = 'pounds'
 dollars = 'dollars'
 yen = 'yen'
 euro = 'euro'
-print("Welcome to the currency converter")
+print("Welcome to the currency converter") #this line welcomes the user
 
 var1 = None
 while var1 not in range(len(allowables)):
