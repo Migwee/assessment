@@ -13,7 +13,8 @@ c) Figure shown should be to two decimal places.
 
 The Currencies required to convert are: GBP (£) Euro (€) USD ($) and JPY (¥).
 ###Possible Problems
-There are a few problems that I have thought may occur. One of these would be what would happen if I entered a letter instead of a number when converting. After testing my code, when I enter a letter, the program simply stops, and gives an error. Another problem I thought of is where the currency changes over time. This may cause incorrect currency rates. However this can be edited in the code itself on the second line. If i had more time I would have tried to link the rates to a automatically updating currency converting website, and get the rates directly from there. However, I did not have enough time to do this.
+There are a few problems that I have thought may occur. One of these would be what would happen if I entered a letter instead of a number when converting. After testing my code, when I enter a letter, the program simply stops, and gives an error. Another problem I thought of is where the currency changes over time. This may cause incorrect currency rates. However this can be edited in the code itself on the second line. If i had more time I would have tried to link the rates to a automatically updating currency converting website, and get the rates directly from there. However, I did not have enough time to do this. I would also make a whiel loop in the code. This would make it so that after you have converted an amount of money, you could then convert something else, instead of the program stopping
+The problem I had with the first code, was that it was not as good as the second one. I liked the second one as I made it to show the conversion rates before you actually convert the amount. This is extremely useful as it is much more advances than the first code.
 
 ###PSEUDOCODE for the first task -
 ```
