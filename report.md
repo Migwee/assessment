@@ -35,12 +35,12 @@ ELSE:
 ###Python code for the first task (This worked, however not how I wanted it to.)
 ```python
 allowables = ["pounds", "dollars", "euro", "yen"]
-rates = [1,1.68,1.23,171.61] #this is where the user can change the conversion rates if they do change
+rates = [1,1.68,1.23,171.61] 
 pounds = 'pounds'
 dollars = 'dollars'
 yen = 'yen'
 euro = 'euro'
-print("Welcome to the currency converter") #this line welcomes the user
+print("Welcome to the currency converter")
 
 var1 = None
 while var1 not in range(len(allowables)):
@@ -71,7 +71,7 @@ currencies= {
     "US Dollar": 1.25
     "Japanese Yen": 171.07
     }
-#this is a dictionary storing the easily changeable exchange rates for each: GBP, EUR, USD and JPY.
+#This is a dictionary storing the easily changeable exchange rates for each: GBP, EUR, USD and JPY.
 
 short_hand = {
     "GBP": "Pound Sterling",
@@ -123,7 +123,7 @@ def rate(c_type1, c_type2): #this is used after the user chooses what they want 
 
 rate(c_type1, c_type2)
 
-numb1 = float(raw_input("How much %s do you wish to convert? " %c_type1))
+numb1 = float(raw_input("How much %s do you wish to convert? " %c_type1)) #this asks the user how much they want to convert
 
 def conversion(w, x, y):  #this does the calculations for the convertor
     if w == "GBP":
