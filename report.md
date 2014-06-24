@@ -65,13 +65,13 @@ print(' your converted amount is {0} {1}'.format(amount,allowables[var2]))
 ```
 ###Successful code (attempt 2, exactly how I wanted)
 ```python
-currencies= {
+currencies= {     
     "Pound Sterling": 1, 
     "Euro": 1.2, 
     "US Dollar": 1.25
     "Japanese Yen": 171.07
     }
-#This is a dictionary storing the easily changeable exchange rates for each: GBP, EUR, USD and JPY.
+#this is a dictionary storing the easily changeable exchange rates for each: GBP, EUR, USD and JPY.
 
 short_hand = {
     "GBP": "Pound Sterling",
@@ -103,7 +103,7 @@ else:
     print c_type2, "is not a valid input"
     c_type2 = raw_input("Please enter a valid currency to convert to- GBP/EUR/USD/JPY: ")
 
-def rate(c_type1, c_type2):
+def rate(c_type1, c_type2): #this is used after the user chooses what they want to convert to and from
     if c_type1 == "GBP":
         print "exchange rate is", currencies["Pound Sterling"]
     if c_type1 == "EUR":
@@ -125,7 +125,7 @@ rate(c_type1, c_type2)
 
 numb1 = float(raw_input("How much %s do you wish to convert? " %c_type1))
 
-def conversion(w, x, y):
+def conversion(w, x, y):  #this does the calculations for the convertor
     if w == "GBP":
         z = y * float(currencies[short_hand[x]])
         return round(z, 2)
@@ -138,6 +138,7 @@ def conversion(w, x, y):
         return round(z, 2)
 
 print "%.2f %s is %.2f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
+#this prints the converted amount
 ```
 ###Task 2 -
 
@@ -172,7 +173,8 @@ The program will then end
 ```
 ###Python code for the second task
 ```python
-answer = raw_input("Are You Creating An Entry [Press 1] \nOr Are You Searching An Entry [Press 2] ")
+answer = raw_input("Are You Creating An Entry [Press 1] \nOr Are You Searching An Entry [Press 2] ") 
+#this line finds out whether the user wants to create or search
 
 # IF we are creating 
 
@@ -180,7 +182,7 @@ if answer == "1" :
     #print ("This is where we create")
     # collect information
 
-    lastname = raw_input("What is the persons last name? ")
+    lastname = raw_input("What is the persons last name? ") #these lines gets all the person's information to store
     firstname = raw_input("What is the persons first name? ")
     phone = raw_input("What id the persons phone number? ")
     email = raw_input("What is the persons email address? ")
@@ -203,12 +205,12 @@ elif answer == "2" :
     print ("This is where we search")
     searchcriteria = raw_input("Enter your search Criteria: Name, Phone Number, Address, Email, Postcode, or Town ")
     print searchcriteria
-    temp1 = open("addressbookdata","r")
+    temp1 = open("addressbookdata","r") #this opens the text file of the database to search frrom
     for line in temp1:
         if searchcriteria in line:
-            print line 
+            print line  #this will print the information frrom the database
         else:
-            print ("No results found")
+            print ("No results found") #if no file can be found
 
 
 # USER DID NOT PICK CREATE OR SEARCH 
