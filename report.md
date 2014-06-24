@@ -222,3 +222,52 @@ else:
     print ("Incorrect Answer")
     exit()
 ```
+###Task 3
+
+###Design -
+The task was to create a program that will take in a 10 digit number and calculate the correct 11 digit ISBN.
+
+a) the number entered must be the correct length
+
+b) only contains the digits 0 to 9.
+###Possible problems
+The main problem of this task would be to make sure the user has not entered any letters, and also that they have entered a 10 digits. This will be hard to stop, as I am not sure exactly how am I going to make sure that the user has entered 10 digits, however I will look into it. One other problem is to make the code output the original 10 numbers and then the ISBN number added onto it, howvever I think I can do this by using print and then adding some other code onto it that stores the 10 digit number that was first entered at the start of the program.
+###PSEUDOCODE for the third task -
+
+```
+Asks the user to input ten numbers
+If the digit number is not 10 it then loops to enter a 10 digit number
+Once the user has input a 10 digit number
+Program calculates ISBN number
+Outputs the 10 digit number with ISBN number on the end
+```
+###Python code for the third task -
+```python
+ISBN=''
+
+while len(str(ISBN))!=10:
+
+    print('Please make sure you have entered a number which is exactly 10 characters long.')
+    ISBN=raw_input('Please enter the 10 digit number: ')
+    
+
+Digit1=int(ISBN[0])*11
+Digit2=int(ISBN[1])*10
+Digit3=int(ISBN[2])*9
+Digit4=int(ISBN[3])*8
+Digit5=int(ISBN[4])*7
+Digit6=int(ISBN[5])*6
+Digit7=int(ISBN[6])*5
+Digit8=int(ISBN[7])*4
+Digit9=int(ISBN[8])*3
+Digit10=int(ISBN[9])*2
+Result=(Digit1+Digit2+Digit3+Digit4+Digit5+Digit6+Digit7+Digit8+Digit9+Digit10)
+Remainder=Result%11
+Digit11=11-Remainder
+if Digit11==10:
+   Digit11='X'
+ISBNNumber=str(ISBN)+str(Digit11)
+print('Your 11 digit ISBN Number is ' + ISBNNumber)
+```
+
+
