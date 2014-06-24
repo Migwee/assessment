@@ -151,4 +151,21 @@ The task was to create a database that -
 3) Can search through the surname entries and displays a contact.
 
 4) Can search through the date of birth entries by month and display entries within this month.
-
+###PSEUDOCODE for the second task -
+```
+Welcome the user to the address book     
+The address book will then ask the user to input 1 or 2 to select if they want to add or search for a file on the database
+If the user inputs 1 they will be able to create an entry
+It will ask them to make an address based of their:
+First name
+Last name
+Telephone
+Email 
+Address
+Once this process is done it will add it to the address book to be search for at a later date
+If the user inputs 2 then it will take them to the search engine
+It will give the user a list of searching options
+The user will input any information about the person and the computer will find anyone in the address book with that information
+It will then print to the user all of the people with that information
+The program will then end
+```
