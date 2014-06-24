@@ -171,7 +171,7 @@ If there is no valid search, the program will end
 The program will then end
 ```
 ###Python code for the second task
-```
+```python
 answer = raw_input("Are You Creating An Entry [Press 1] \nOr Are You Searching An Entry [Press 2] ")
 
 # IF we are creating 
