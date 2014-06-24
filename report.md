@@ -167,5 +167,6 @@ If the user inputs 2 then it will take them to the search engine
 It will give the user a list of searching options
 The user will input any information about the person and the computer will find anyone in the address book with that information
 It will then print to the user all of the people with that information
+If there is no valid search, the program will end
 The program will then end
 ```
