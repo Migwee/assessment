@@ -152,6 +152,9 @@ The task was to create a database that -
 3) Can search through the surname entries and displays a contact.
 
 4) Can search through the date of birth entries by month and display entries within this month.
+###Possible Problems
+The main problem that I could encounter would be if the user entered a search criteria that was not valid. This could be hard to create a code that is only going to show information that the user wants to see. I think it will also be hard to be able to find a file by month. So instead of using letters, the user will have to search using '04' for example, this would search for someone that was born in the month April. I do not think this is too bad, as it still shows the month that the person was born in. I could not actually implement something that would allow the user to delete file's in the database, however this can easily be done if the user looks into the text file which has all the file's in it. The program links to the text file that holds all the information, so this would work very well.
+
 ###PSEUDOCODE for the second task -
 ```
 Welcome the user to the address book     
@@ -171,7 +174,7 @@ It will then print to the user all of the people with that information
 If there is no valid search, the program will end
 The program will then end
 ```
-###Python code for the second task
+###Python code for the second task -
 ```python
 answer = raw_input("Are You Creating An Entry [Press 1] \nOr Are You Searching An Entry [Press 2] ") 
 #this line finds out whether the user wants to create or search
