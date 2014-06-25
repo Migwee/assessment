@@ -1,73 +1,49 @@
 currencies= {
-    "Pound Sterling": 1, 
-    "Euro": 1.2, 
-    "US Dollar": 1.25
-    "Japanese Yen": 171.07
+    "GBP": 1, 
+    "EUR": 1.2, 
+    "USD": 1.6, 
+    "JPY": 200
     }
 #This is a dictionary storing the easily changeable exchange rates for each: GBP, EUR, USD and JPY.
 
-short_hand = {
-    "GBP": "Pound Sterling",
-    "EUR": "Euro",
-    "USD": "US Dollar",
-    "JPY": "Japanese Yen"
-    }
-#This is a dictionary showing the programmer which three letter code relates to which currency.
+def get_c(dr):
+    '''This function ensures that the currencies inputted by user are of the valid currencies:
+    if it is, it returns which currency has been inputted,
+    if it isn't, it asks the user to input again'''
+    answer = ""
+    while answer not in ["GBP", "EUR", "USD", "JPY"]:
+        answer = raw_input("Please enter a valid currency to convert {0}- GBP/EUR/USD/JPY: ".format(dr))
+        answer = answer.upper()
+    else:
+        print "You entered %s" %answer
+    return answer
 
-print short_hand
-#This shows the user which currency relates to which three letter code.
-
-c_type1 = raw_input("What Currency are you converting from? GBP/EUR/USD/JPY: ")
-c_type1 = c_type1.upper()
-#This allows the user to input a currency to convert from and stores it as the variable 'c_type1' and then capitalises it for the program to read.
-
-if c_type1 == "GBP" or "EUR" or "USD" or "JPY":
-    "You entered %s" %(c_type1)
-else:
-    print c_type1, "is not a valid input"
-    c_type1 = raw_input("Please enter a valid currency to convert from- GBP/EUR/USD/JPY: ")
-    
-c_type2 = raw_input("What Currency are you converting to? GBP/EUR/USD/JPY: ")
-c_type2 = c_type2.upper()
-
-if c_type2 == "GBP" or "EUR" or "USD" or "JPY":
-    "You entered %s" %(c_type1)
-else:
-    print c_type2, "is not a valid input"
-    c_type2 = raw_input("Please enter a valid currency to convert to- GBP/EUR/USD/JPY: ")
+c_type1 = get_c("from")
+c_type2 = get_c("to")
+#This causes the placeholder: '{0}' in line 15 to be either "to" or "from", depending on which is converted from and which is converted to
 
 def rate(c_type1, c_type2):
-    if c_type1 == "GBP":
-        print "exchange rate is", currencies["Pound Sterling"]
-    if c_type1 == "EUR":
-        print "exchange rate is", currencies["Euro"]
-    if c_type1 == "USD":
-        print "exchange rate is", currencies["US Dollar"]
-    if c_type1 == "JPY":
-        print "exchange rate is", currencies["Japanese Yen"]
-    if c_type2 == "GBP":
-        print "to", currencies["Pound Sterling"]
-    if c_type2 == "EUR":
-        print "to", currencies["Euro"]
-    if c_type2 == "USD":
-        print "to", currencies["US Dollar"]
-    if c_type2 == "JPY":
-        print "to", currencies["Japanese Yen"]
+    '''This function just prints the line below, with the placeholders representing the exchange rate and the currency'''
+    print ("Exchange rate is {0}{1} to {2}{3}".format( currencies[c_type1], c_type1, currencies[c_type2], c_type2))
 
 rate(c_type1, c_type2)
+#This calls the function using the variables c_type1 and c_type2 in the function
 
 numb1 = float(raw_input("How much %s do you wish to convert? " %c_type1))
+#This stores the answer to the printed question as numb1
 
 def conversion(w, x, y):
+    '''This function converts each the chosen currencies using the exchange rates and the starting currency amount'''
     if w == "GBP":
-        z = y * float(currencies[short_hand[x]])
+        z = y * float(currencies[x])
         return round(z, 2)
     elif x == "GBP":
-        z = y / float(currencies[short_hand[w]])
+        z = y / float(currencies[w])
         return round(z, 2)
     else:
-        z = y / float(currencies[short_hand[w]])
-        z = z * float(currencies[short_hand[x]])
+        z = y / float(currencies[w])
+        z = z * float(currencies[x])
         return round(z, 2)
 
-print "%.2f %s is %.2f %s" %(numb1, short_hand[c_type1], conversion(c_type1, c_type2, numb1), short_hand[c_type2])
+print "%.2f %s is %.2f %s" %(numb1, c_type1, conversion(c_type1, c_type2, numb1), c_type2)
+#This prints out the results of the conversion, using the starting currency, the result of the conversion and the currency types
