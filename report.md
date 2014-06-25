@@ -161,13 +161,13 @@ The task was to create a database that -
 
 4) Can search through the date of birth entries by month and display entries within this month.
 ###Programming Techniques
-####input - where the user inputs
-####output - if it is a valid search the program will output the information
-####file - create file, open file and read file
-####variable - 
-####for loop - 
-####if loop - if the user said 2 or 1
-####search criteria - so the user could search for certain aspects in the database
+####input - this will tell the program whether the user wants to create and entry or to search for one
+####output - if it is a valid search the program will output the information of the person they were trying to search. If it is not valid it will print 'no results found'
+####file - create file, this was used to store all of the information in the database for the user to search. open file, this was used when the user was searching. The program would open the database and then the program would search for a line that has the relevant information and read file, this is where the program would read the file line by line
+####variable - this is used to name something. I used a variable that was temp1. I should have named it something useful, like I did in Task 1
+####for loop - this is used when the program is searching in the database on each line
+####if loop - if the program has found the correct information it will print it
+####search criteria - so the user could search for certain aspects in the database. The criteria is stated in the first part of the code
 ####line with file - this can find the information in the database
 ```python
 elif answer == "2" : #if the user enters 2 it means they want to search
