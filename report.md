@@ -1,5 +1,5 @@
 #Controlled Assessment Report
-
+#Aidan King Centre Number - 64305 Candidate Number - 0102
 ##Task 1 -
 
 ###Design
@@ -161,10 +161,26 @@ The task was to create a database that -
 
 4) Can search through the date of birth entries by month and display entries within this month.
 ###Programming Techniques
-input
-output
+input - where the user inputs
+output - if it is a valid search the program will output the information
 file - create file, open file and read file
-variable
+variable - 
+for loop - 
+if loop - if the user said 2 or 1
+search criteria - so the user could search for certain aspects in the database
+line with file - this can find the information in the database
+```
+elif answer == "2" : #if the user enters 2 it means they want to search
+    print ("This is where we search") #tells the user they are searching
+    searchcriteria = raw_input("Enter your search Criteria: Name, Phone Number, Address, Email, Postcode, or Town ") #these are the things the user can search for
+    print searchcriteria #this prints everything the user can search for
+    temp1 = open("addressbookdata","r") #temporatily opens the addressbook file
+    for line in temp1: #if it is in the line
+        if searchcriteria in line: #if the search criteria is correct,
+            print line  #print this line
+        else: #if not, print no results found
+            print ("No results found")
+```
 
 ###Possible Problems
 The main problem that I could encounter would be if the user entered a search criteria that was not valid. This could be hard to create a code that is only going to show information that the user wants to see. I think it will also be hard to be able to find a file by month. So instead of using letters, the user will have to search using '04' for example, this would search for someone that was born in the month April. I do not think this is too bad, as it still shows the month that the person was born in. I could not actually implement something that would allow the user to delete file's in the database, however this can easily be done if the user looks into the text file which has all the file's in it. The program links to the text file that holds all the information, so this would work very well.
