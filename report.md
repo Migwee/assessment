@@ -12,6 +12,8 @@ b) User should be able to enter an amount, select chosen currency, and the curre
 c) Figure shown should be to two decimal places.
 
 The Currencies required to convert are: GBP (£) Euro (€) USD ($) and JPY (¥).
+###Programming Techniques
+
 ###Possible Problems
 There are a few problems that I have thought may occur. One of these would be what would happen if I entered a letter instead of a number when converting. After testing my code, when I enter a letter, the program simply stops, and gives an error. Another problem I thought of is where the currency changes over time. This may cause incorrect currency rates. However this can be edited in the code itself on the second line. If I had more time I would have tried to link the rates to a automatically updating currency converting website, and get the rates directly from there. However, I did not have enough time to do this. I would also make a while loop in the code. This would make it so that after you have converted an amount of money, you could then convert something else, instead of the program stopping
 The problem I had with the first code, was that it was not as good as the second one. I liked the second one as I made it to show the conversion rates before you actually convert the amount. This is extremely useful as it is much more advances than the first code.
@@ -152,6 +154,8 @@ The task was to create a database that -
 3) Can search through the surname entries and displays a contact.
 
 4) Can search through the date of birth entries by month and display entries within this month.
+###Programming Techniques
+
 ###Possible Problems
 The main problem that I could encounter would be if the user entered a search criteria that was not valid. This could be hard to create a code that is only going to show information that the user wants to see. I think it will also be hard to be able to find a file by month. So instead of using letters, the user will have to search using '04' for example, this would search for someone that was born in the month April. I do not think this is too bad, as it still shows the month that the person was born in. I could not actually implement something that would allow the user to delete file's in the database, however this can easily be done if the user looks into the text file which has all the file's in it. The program links to the text file that holds all the information, so this would work very well.
 
@@ -230,6 +234,8 @@ The task was to create a program that will take in a 10 digit number and calcula
 a) the number entered must be the correct length
 
 b) only contains the digits 0 to 9.
+###Programming Techniques
+
 ###Possible problems
 The main problem of this task would be to make sure the user has not entered any letters, and also that they have entered a 10 digits. This will be hard to stop, as I am not sure exactly how am I going to make sure that the user has entered 10 digits, however I will look into it. One other problem is to make the code output the original 10 numbers and then the ISBN number added onto it, howvever I think I can do this by using print and then adding some other code onto it that stores the 10 digit number that was first entered at the start of the program.
 ###PSEUDOCODE for the third task -
