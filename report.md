@@ -144,7 +144,7 @@ def conversion(w, x, y):
 print "%.2f %s is %.2f %s" %(numb1, c_type1, conversion(c_type1, c_type2, numb1), c_type2)
 #This prints out the results of the conversion, using the starting currency, the result of the conversion and the currency types
 ```
-##Development and Evaluation
+## Evaluation
 I think the final code is very successful. It works exactly how I wanted it to and I think I have done a good job. Next time however I would link it to an automatically updating currency converting website, so that the conversion rates are never wrong. In this code, if they are wrong the user simply has to go into the code and change the rates manually.
 Matching my code to the success criteria, it does everything that it wants to do. It has exchange rates that can be changed by the user, the user can enter an amount, select the chosen currency for this and the currency into which this should be converted. However I could not make it return with 2 decimal places, as I did not have enough time, therefore I could not figure it out.
 ##Task 2 -
@@ -276,7 +276,7 @@ else:
     print ("Incorrect Answer")
     exit()
 ```
-##Development and Evaluation
+## Evaluation
 I am very happy with this code. It works efficiently and does what it needs to. Instead of only searching by surname and date of birth, I added a feature where the user can enter any information about a person, and the program will look in the database and print all of that person’s information.
 This program works well. It also does what was required. A surname can be used to retrieve data for a contact, and so can a date of birth. (numerically)
 ##Task 3
@@ -406,8 +406,7 @@ if Digit11==10:
 ISBNNumber=str(ISBN)+str(Digit11)
 print('Your 11 digit ISBN Number is ' + ISBNNumber)
 ```
-##Development and Evaluation
+## Evaluation
 This was the easiest code to create out of all of them, this was because it was rather simple to create the calculation code, surprisingly, at the start I thought it would actually be the hardest. There is nothing I think I could improve on for this code, apart from create a loop so that at the end of the program, it would ask if the user wanted to find another ISBN number. I would have done this if I had a bit more time.
 This code works perfectly. An error occurs if there is too many or too little numbers entered, and it takes the user back to the start. It also only takes in the digits 0-9.
-
 
