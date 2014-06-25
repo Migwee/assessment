@@ -8,7 +8,7 @@ c) Figure shown should be to two decimal places.
 The Currencies required to convert are: GBP (£) Euro (€) USD ($) and JPY (¥).
 ###Programming Techniques
 #####list - I used this to list the four currencies (Pound Sterling, Euro, Yen and Dollars)
-sensible variable name - I could have used any variable, however throughout my code I set the variables the sensible names, for example c_type1 represents currency type 1. short_hand represents the short version of the currency
+#####sensible variable name - I could have used any variable, however throughout my code I set the variables the sensible names, for example c_type1 represents currency type 1. short_hand represents the short version of the currency
 #####def function - I used this as functions are useful to repeat tasks without returning values
 #####input - I used this to store the input, this was then used later on to convert
 #####output - I used output to show the user what their converted amount was
@@ -133,7 +133,7 @@ The task was to create a database that -
 #####if loop - if the program has found the correct information it will print it
 #####search criteria - so the user could search for certain aspects in the database. The criteria is stated in the first part of the code
 #####line with file - this can find the information in the database
-```
+```python
 elif answer == "2" : #if the user enters 2 it means they want to search
     print ("This is where we search") #tells the user they are searching
     searchcriteria = raw_input("Enter your search Criteria: Name, Phone Number, Address, Email, Postcode, or Town ") #these are the things the user can search for
