@@ -13,7 +13,13 @@ c) Figure shown should be to two decimal places.
 
 The Currencies required to convert are: GBP (£) Euro (€) USD ($) and JPY (¥).
 ###Programming Techniques
-
+list - I used this to list the four currencies (Pound Sterling, Euro, Yen and Dollars)
+sesnsible variable name - I could have used any variable, however throughtout my code I set the variables the sensible names, for example c_type1 represents currenct type 1. short_hand represents the short version of the currency
+def function - I used this as functions are useful to repeat tasks without returning values
+input - I used this to store the input, this was then used later on to convert
+output - I used output to show the user what their converted amount was
+if statement - I used this so the program could tell what the user wanted to conver to and from, and when it knew that, it could then do the calculations to find out the converted amount.
+if loop - if, elif, else. I used if loop as I used (x,y,z). Which was used to convert at the end of the program. If it was not one calculation, elif was used, and if it was not that, else was then used.
 ###Possible Problems
 There are a few problems that I have thought may occur. One of these would be what would happen if I entered a letter instead of a number when converting. After testing my code, when I enter a letter, the program simply stops, and gives an error. Another problem I thought of is where the currency changes over time. This may cause incorrect currency rates. However this can be edited in the code itself on the second line. If I had more time I would have tried to link the rates to a automatically updating currency converting website, and get the rates directly from there. However, I did not have enough time to do this. I would also make a while loop in the code. This would make it so that after you have converted an amount of money, you could then convert something else, instead of the program stopping
 The problem I had with the first code, was that it was not as good as the second one. I liked the second one as I made it to show the conversion rates before you actually convert the amount. This is extremely useful as it is much more advances than the first code.
@@ -155,6 +161,10 @@ The task was to create a database that -
 
 4) Can search through the date of birth entries by month and display entries within this month.
 ###Programming Techniques
+input
+output
+file - create file, open file and read file
+variable
 
 ###Possible Problems
 The main problem that I could encounter would be if the user entered a search criteria that was not valid. This could be hard to create a code that is only going to show information that the user wants to see. I think it will also be hard to be able to find a file by month. So instead of using letters, the user will have to search using '04' for example, this would search for someone that was born in the month April. I do not think this is too bad, as it still shows the month that the person was born in. I could not actually implement something that would allow the user to delete file's in the database, however this can easily be done if the user looks into the text file which has all the file's in it. The program links to the text file that holds all the information, so this would work very well.
