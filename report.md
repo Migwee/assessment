@@ -181,7 +181,6 @@ elif answer == "2" : #if the user enters 2 it means they want to search
         else: #if not, print no results found
             print ("No results found")
 ```
-
 ###Possible Problems
 The main problem that I could encounter would be if the user entered a search criteria that was not valid. This could be hard to create a code that is only going to show information that the user wants to see. I think it will also be hard to be able to find a file by month. So instead of using letters, the user will have to search using '04' for example, this would search for someone that was born in the month April. I do not think this is too bad, as it still shows the month that the person was born in. I could not actually implement something that would allow the user to delete file's in the database, however this can easily be done if the user looks into the text file which has all the file's in it. The program links to the text file that holds all the information, so this would work very well.
 
@@ -261,6 +260,7 @@ a) the number entered must be the correct length
 
 b) only contains the digits 0 to 9.
 ###Programming Techniques
+
 
 ###Possible problems
 The main problem of this task would be to make sure the user has not entered any letters, and also that they have entered a 10 digits. This will be hard to stop, as I am not sure exactly how am I going to make sure that the user has entered 10 digits, however I will look into it. One other problem is to make the code output the original 10 numbers and then the ISBN number added onto it, howvever I think I can do this by using print and then adding some other code onto it that stores the 10 digit number that was first entered at the start of the program.
